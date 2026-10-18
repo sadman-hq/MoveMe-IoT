@@ -61,25 +61,6 @@ The notebook `energy_analysis` in `codebase_final/` performs the analysis in the
 
 ---
 
-## Main Results
-Test-set detection performance and estimated Raspberry Pi 4B performance (typical power scenario):
-
-| Model | Precision | Recall | mAP@50 | mAP@50-95 | Pi FPS | Energy per inference (mJ) |
-|---|---|---|---|---|---|---|
-| YOLOv4-tiny | 0.722 | 0.597 | 0.664 | 0.381 | 2.81 | 1892 |
-| YOLOv5 | 0.786 | 0.597 | 0.644 | 0.496 | 2.61 | 2105 |
-| YOLOv8 | 0.606 | 0.720 | 0.712 | 0.577 | 1.47 | 3169 |
-| YOLOv11 | 0.677 | 0.669 | 0.722 | 0.539 | 1.71 | 2723 |
-| YOLOv12 | 0.633 | 0.486 | 0.474 | 0.328 | 1.58 | 2951 |
-| YOLO26 | 0.842 | 0.700 | 0.760 | 0.554 | 0.61 | 7688 |
-
-- **YOLOv8** has the highest mAP@50-95 and is preferred when accuracy is the priority.
-- **YOLOv4-tiny** and **YOLOv5** are the most energy-efficient and the only models sustaining 2 FPS.
-- **YOLOv5** ranks first in 70.1% of 10,000 random weightings, giving the best balance of accuracy and energy.
-- No model reaches 5 FPS on the estimated Raspberry Pi 4B.
-
----
-
 ## Repository Structure
 ```
 codebase_final/
